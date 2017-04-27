@@ -18,11 +18,11 @@ namespace 获取当前方法所在的命名空间
         {
             string str = "";
             //取得当前方法命名空间
-            str += "命名空间名:" + System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.Namespace + "\n";
+            str += "命名空间名:" + MethodBase.GetCurrentMethod().DeclaringType.Namespace + "\n";
             //取得当前方法类全名
-            str += "类名:" + System.Reflection.MethodBase.GetCurrentMethod().DeclaringType.FullName + "\n";
+            str += "类名:" + MethodBase.GetCurrentMethod().DeclaringType.FullName + "\n";
             //取得当前方法名
-            str += "方法名:" + System.Reflection.MethodBase.GetCurrentMethod().Name + "\n";
+            str += "方法名:" + MethodBase.GetCurrentMethod().Name + "\n";
             str += "\n";
 
             StackTrace ss = new StackTrace(true);
