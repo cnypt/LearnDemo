@@ -8,7 +8,6 @@ namespace 获取当前方法所在的命名空间
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine(GetMethodInfo());
 
             Console.ReadKey();
